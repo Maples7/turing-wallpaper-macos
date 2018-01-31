@@ -1,0 +1,1 @@
+5 0-23 * * 1 python /Users/maples7/wallpapers/wallpaper.py >> /Users/maples7/wallpapers/wallpaper.log
