@@ -5,13 +5,13 @@ from PIL import Image, ImageFilter
 
 PDF_SOURCE = '/Users/maples7/wallpapers/images/{:04d}.jpg'
 BACKGROUND_SOURCE = '/Users/maples7/wallpapers/wallpaper.jpg'
-OUTPUT = '/Users/maples7/Pictures/wallpaper.png'
 
 PAGE_OFFSET = 7
 MARGIN_LEFT = 400
 MARGIN_TOP = 400
 
 current_week = datetime.datetime.now().isocalendar()[1]
+OUTPUT = '/Users/maples7/Pictures/wallpaper-{}.png'.format(current_week)
 page = PAGE_OFFSET + current_week
 
 calendar = Image.open(PDF_SOURCE.format(page))
