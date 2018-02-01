@@ -32,7 +32,7 @@ background = background.convert('RGBA')
 
 # calendar.save('tmp.png')
 
-background.paste(calendar, (MARGIN_TOP, MARGIN_LEFT))
+background.paste(calendar, (MARGIN_LEFT, MARGIN_TOP))
 background.save(OUTPUT)
 
 os.system(''' 
